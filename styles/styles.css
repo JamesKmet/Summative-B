@@ -1,0 +1,237 @@
+#navbar {
+  background: white;
+  -webkit-box-shadow: 0px 20px 20px -7px #ffffff,
+    5px 10px 19px 18px rgba(255, 255, 255, 0.68);
+}
+
+.nav_buttons {
+  position:  s;
+  display: flex;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.nav_item {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.nav_item1 {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.logo1 {
+  padding-right: 60px;
+  max-width: 80px;
+}
+
+.logo2 {
+  max-width: 80px;
+  padding-left: 60px;
+}
+
+hr.solid {
+  width: 70%;
+  border-top: 1px solid #bbb;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+  padding-top: 60px;
+}
+
+
+/* breaker */
+
+
+.hero_banner{
+  width: auto;
+  height: 1000px;
+  background-image: url('../images/hero_banner_image.jpg');
+}
+
+.hero_text_wraper{
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  padding-top:730px;
+  float: right;
+  margin-right: 220px;
+}
+
+#homeButton{
+  color: white;
+  background-color: #af3e4d;
+  float: right;
+  margin-left: 200px;
+  border-radius: 8px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  border: none;
+  font-size: 23px;
+}
+
+p1{
+  font-size: 50px;
+  float: right;
+}
+p2{
+  font-size: 30px;
+  float: right;
+}
+
+/* breaker */
+
+.breaker_one{
+    margin-top: 5px;
+    background-image: url('../images/hobbiton_breaker.jpg');
+    width: 100%;
+    height: 310px;
+    margin-bottom: 5px;
+}
+
+.breaker_two{
+    margin-top:1915px;
+    background-image: url('../images/hobbiton_breaker.jpg');
+    width: 100%;
+    height: 310px;
+    margin-bottom: 5px;
+}
+
+
+/* breaker */
+.hotel_one{
+  position: flex;
+  width: 49.8%;
+  height: 950px;
+  background-image: url('../images/hotel_one.jpg');
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+.hotel_one button{
+  font-size: 20px;
+  color: white;
+  background-color: #af3e4d;
+  float: right;
+  margin-left: 200px;
+  margin-top: 830px;
+  margin-right: 110px;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+    border: none;
+}
+
+
+
+
+.hotel_two{
+  position: flex;
+  width: 49.8%;
+  height: 950px;
+  background-image: url('../images/hotel_two.jpg');
+  float: left;
+  margin-bottom: 5px;
+}
+
+.hotel_two button{
+  font-size: 20px;
+  color: white;
+  background-color: #af3e4d;
+  float: right;
+  margin-left: 200px;
+  margin-top: 830px;
+  margin-right: 110px;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+    border: none;
+}
+
+
+
+
+.hotel_three{
+  position: flex;
+  width: 49.8%;
+  height: 950px;
+  background-image: url('../images/hotel_three.jpg');
+  float: left;
+  margin-right: 5px;
+}
+
+.hotel_three button{
+  font-size: 20px;
+  color: white;
+  background-color: #af3e4d;
+  float: right;
+  margin-left: 200px;
+  margin-top: 830px;
+  margin-right: 110px;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+    border: none;
+}
+
+
+.hotel_four{
+  position: flex;
+width: 49.8%;
+  height: 950px;
+  background-image: url('../images/hotel_four.jpg');
+  float: left;
+}
+
+.hotel_four button{
+  font-size: 20px;
+  color: white;
+  background-color: #af3e4d;
+  float: right;
+  margin-left: 200px;
+  margin-top: 830px;
+  margin-right: 110px;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  border: none;
+  
+
+}
+
+
+
+/* breaker */
+.footer_wraper{
+  background-color: grey;
+}
