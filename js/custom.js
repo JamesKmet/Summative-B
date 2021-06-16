@@ -53,20 +53,20 @@ getHotels.onclick = function() {
 
   // function nightsFunction ENDS
   //
-  function peopleFunction () {
-    if(getPeopleInput.value > 3 ){
+  function peopleFunction() {
+    if (getPeopleInput.value > 3) {
       document.getElementById('h1').style.opacity = '0.5';
     }
-    if(getPeopleInput.value > 1 ){
+    if (getPeopleInput.value > 1) {
       document.getElementById('h2').style.opacity = '0.5';
     }
-    if(getPeopleInput.value > 4){
+    if (getPeopleInput.value > 4) {
       document.getElementById('h3').style.opacity = '0.5';
     }
-    if(getPeopleInput.value > 4 ){
+    if (getPeopleInput.value > 4) {
       document.getElementById('h4').style.opacity = '0.5';
     }
-    }
+  }
   //   // peopleFunction ENDS
   // peopleFunction ENDS
 
@@ -76,6 +76,42 @@ getHotels.onclick = function() {
 };
 
 // click function ENDS
+
+
+// booking caluclators
+
+function nightValidatorOne() {
+  var x, text;
+  // Get the value of the input field with id="x"
+  x = document.getElementById("hotelModalNightsOne").value;
+  // If x is Not a Number or less than one or greater than 10
+  if (isNaN(x) || x < 1 || x > 5) {
+    text = "Sorry but you are only able to book a maximum of 5 nights";
+  } else {
+    text = "This slot is available. Please confirm details below";
+  }
+  document.getElementById("subMessage").innerHTML = text;
+}
+
+
+
+
+function caluclatorValidatorOne() {
+  var getHotelModalNightsOne = document.getElementById('hotelModalNightsOne').value;
+  var x = getHotelModalNightsOne;
+  var y = 157;
+  var z = x * y;
+  text = z;
+
+  document.getElementById("outPutTwo").innerHTML = text;
+}
+nightValidatorOne();
+caluclatorValidatorOne();
+
+
+
+
+
 
 // 1. Comment the end of your functions
 // 2. Go incrementally, constantly checking console for errors
