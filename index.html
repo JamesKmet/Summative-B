@@ -44,6 +44,7 @@
 
   <section>
     <div class="breaker_one">
+      <h2>Expore the Wonders of New Zealand</h2>
     </div>
   </section>
 
@@ -64,15 +65,42 @@
     </div>
   </section>
 
-
-  <section class="menu_wraper">
-    <col span="2">
-  </section>
-
   <section class="pog">
     <div class="breaker_two">
     </div>
   </section>
+
+  <section class="menu_wraper">
+    <div class="row">
+      <div class="foodOne">
+        <img class="foodOne" src="images/food_one.jpg" alt="">
+        <p>noodle pogger</p>
+        <p>shrimp</p>
+        <p>salt</p>
+        <p>pepper</p>
+        <p>2 min noodles</p>
+      </div>
+      <div class="foodTwo">
+        <img class="foodTwo" src="images/food_two.jpg" alt="">
+      </div>
+      <div class="foodThree">
+        <img class="foodThree" src="images/food_three.jpg" alt="">
+      </div>
+      <div class="FoodFour">
+        <img src="images/food_four.jpg" alt="">
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+
+
 
 
 
@@ -125,37 +153,36 @@
         </div>
         <!-- Modal body -->
         <div class="modal-body">
-          <form action="/action_page.php">
-            <h1>Please fill out booking infomation bellow</h1>
-            <label>Number of Nights:</label>
+          <h3>Please fill out booking infomation bellow</h3>
+          <form class="modalWraper" action="/action_page.php">
+
+            <label1>Number of Nights:</label1>
             <input type="text" id="hotelModalNightsOne" value="0">
             <br>
-            <label>Cheak in date:</label>
+            <label1>Cheak in date:</label1>
             <input type="text" id="hotelModalCheakADatesOne" value="23/01/1997">
             <br>
-            <label>Cheak out date:</label>
+            <label1>Cheak out date:</label1>
             <input type="text" id="hotelModalCheakBDatesOne" value="29/10/1998">
           </form>
 
           <br>
-          <div class="totalPriceDiv">
-            <button type="button" onclick="nightValidatorOne()" id="availablityOne">Cheak Availablity</button>
-            <p id="subMessage"></p>
+          <div id="totalPriceDiv">
+            <button type="button" class="btn btn-success" onclick="nightValidatorOne()" id="availablityOne">Cheak Availablity</button>
+            <br>
+            <br>
+            <p id="subMessageOne"></p>
           </div>
-
           <br>
-          <br><br>
-          <br>
-          <br>
-          <div class="meh" id="pog">
-            <button type="button" onclick="caluclatorValidatorOne()">Caluclate Cost</button>
-            <p>final total is:</p>
-            <p id="outPutTwo"></p>
+          <div class="meh" id="step2One">
+            <p>final total is</p>
+            <p id="outPutOne"></p>
+            <button type="button" class="btn btn-success" onclick="caluclatorValidatorOne()">Caluclate Cost</button>
           </div>
         </div>
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-success" id="findHotel" data-dismiss="modal">Book Hotel</button>
+          <button type="button" class="btn btn-success" id="findHotel" onclick="testing()" data-dismiss="modal">Book Hotel</button>
         </div>
       </div>
     </div>
@@ -168,25 +195,36 @@
       <div class="modal-content">
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Piscis Dela Hotel</h4>
+          <h4 class="modal-title">Embassy La Suites</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <!-- Modal body -->
         <div class="modal-body">
-          <form action="/action_page.php">
-            <h1>Please fill out booking infomation bellow</h1>
-            <label>Number of Nights:</label>
+          <h3>Please fill out booking infomation bellow</h3>
+          <form class="modalWraper" action="/action_page.php">
+
+            <label1>Number of Nights:</label1>
             <input type="text" id="hotelModalNightsTwo" value="0">
             <br>
-            <label>Cheak in date:</label>
-            <input type="text" id="hotelModalCheakADatestTwo" value="23/01/1997">
+            <label1>Cheak in date:</label1>
+            <input type="text" id="hotelModalCheakADatesTwo" value="23/01/1997">
             <br>
-            <label>Cheak out date:</label>
-            <input type="text" id="hotelModalCheakBDatestTwo" value="29/10/1998">
+            <label1>Cheak out date:</label1>
+            <input type="text" id="hotelModalCheakBDatesTwo" value="29/10/1998">
           </form>
-          <div class="totalPriceDiv">
-            <label>Total:</label>
-            <input type="text" id="hotelModalTotalPriceTwo" value="$157">
+
+          <br>
+          <div id="totalPriceDiv">
+            <button type="button" class="btn btn-success" onclick="nightValidatorTwo()" id="availablityTwo">Cheak Availablity</button>
+            <br>
+            <br>
+            <p id="subMessageTwo"></p>
+          </div>
+          <br>
+          <div class="meh" id="step2Two">
+            <p>final total is</p>
+            <p id="outPutTwo"></p>
+            <button type="button" class="btn btn-success" onclick="caluclatorValidatorTwo()">Caluclate Cost</button>
           </div>
         </div>
         <!-- Modal footer -->
@@ -204,25 +242,36 @@
       <div class="modal-content">
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Kamino Hotel</h4>
+          <h4 class="modal-title">Embassy La Suites</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <!-- Modal body -->
         <div class="modal-body">
-          <form action="/action_page.php">
-            <h1>Please fill out booking infomation bellow</h1>
-            <label>Number of Nights:</label>
+          <h3>Please fill out booking infomation bellow</h3>
+          <form class="modalWraper" action="/action_page.php">
+
+            <label1>Number of Nights:</label1>
             <input type="text" id="hotelModalNightsThree" value="0">
             <br>
-            <label>Cheak in date:</label>
+            <label1>Cheak in date:</label1>
             <input type="text" id="hotelModalCheakADatesThree" value="23/01/1997">
             <br>
-            <label>Cheak out date:</label>
+            <label1>Cheak out date:</label1>
             <input type="text" id="hotelModalCheakBDatesThree" value="29/10/1998">
           </form>
-          <div class="totalPriceDiv">
-            <label>Total:</label>
-            <input type="text" id="hotelModalTotalPriceThree" value="$157">
+
+          <br>
+          <div id="totalPriceDiv">
+            <button type="button" class="btn btn-success" onclick="nightValidatorThree()" id="availablityThree">Cheak Availablity</button>
+            <br>
+            <br>
+            <p id="subMessageThree"></p>
+          </div>
+          <br>
+          <div class="meh" id="step2Three">
+            <p>final total is</p>
+            <p id="outPutThree"></p>
+            <button type="button" class="btn btn-success" onclick="caluclatorValidatorThree()">Caluclate Cost</button>
           </div>
         </div>
         <!-- Modal footer -->
@@ -245,32 +294,60 @@
         </div>
         <!-- Modal body -->
         <div class="modal-body">
-          <form action="/action_page.php">
-            <h1>Please fill out booking infomation bellow</h1>
-            <label>Number of Nights:</label>
+          <h3>Please fill out booking infomation bellow</h3>
+          <form class="modalWraper" action="/action_page.php">
+
+            <label1>Number of Nights:</label1>
             <input type="text" id="hotelModalNightsFour" value="0">
             <br>
-            <label>Cheak in date:</label>
+            <label1>Cheak in date:</label1>
             <input type="text" id="hotelModalCheakADatesFour" value="23/01/1997">
             <br>
-            <label>Cheak out date:</label>
+            <label1>Cheak out date:</label1>
             <input type="text" id="hotelModalCheakBDatesFour" value="29/10/1998">
           </form>
-          <div class="totalPriceDiv">
-            <label>Total:</label>
-            <input type="text" id="hotelModalTotalPriceFour" value="$157">
+
+          <br>
+          <div id="totalPriceDiv">
+            <button type="button" class="btn btn-success" onclick="nightValidatorFour()" id="availablityFour">Cheak Availablity</button>
+            <br>
+            <br>
+            <p id="subMessageFour"></p>
+          </div>
+          <br>
+          <div class="meh" id="step2Four">
+            <p>final total is</p>
+            <p id="outPutFour"></p>
+            <button type="button" class="btn btn-success" onclick="caluclatorValidatorFour()">Caluclate Cost</button>
           </div>
         </div>
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-success" id="findHotel" data-dismiss="modal">Book Hotel</button>
+          <button type="button" class="btn btn-success" id="findHotel" data-dismiss="modal" data-target="test()">Book Hotel</button>
         </div>
       </div>
     </div>
   </div>
 
 
+
   </div>
+
+
+  <div class="toast" id="myToast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded mr-2" alt="...">
+      <strong class="mr-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

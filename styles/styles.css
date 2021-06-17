@@ -5,7 +5,7 @@
 }
 
 .nav_buttons {
-  position:  s;
+  position: s;
   display: flex;
   align-items: center;
   font-family: 'Nunito', sans-serif;
@@ -26,6 +26,7 @@
   padding-left: 60px;
   padding-right: 60px;
 }
+
 .logo1 {
   padding-right: 60px;
   max-width: 80px;
@@ -52,25 +53,22 @@ hr.solid {
   padding-top: 60px;
 }
 
-
 /* breaker */
-
-
-.hero_banner{
+.hero_banner {
   width: auto;
   height: 1000px;
   background-image: url('../images/hero_banner_image.jpg');
 }
 
-.hero_text_wraper{
+.hero_text_wraper {
   color: white;
   font-family: 'Nunito', sans-serif;
-  padding-top:730px;
+  padding-top: 730px;
   float: right;
   margin-right: 220px;
 }
 
-#homeButton{
+#homeButton {
   color: white;
   background-color: #af3e4d;
   float: right;
@@ -85,36 +83,46 @@ hr.solid {
   font-size: 23px;
 }
 
-p1{
+p1 {
   font-size: 50px;
   float: right;
 }
-p2{
+
+p2 {
   font-size: 30px;
   float: right;
 }
 
 /* breaker */
-
-.breaker_one{
-    margin-top: 5px;
-    background-image: url('../images/hobbiton_breaker.jpg');
-    width: 100%;
-    height: 310px;
-    margin-bottom: 5px;
+.breaker_one {
+  margin-top: 5px;
+  background-image: url('../images/hobbiton_breaker.jpg');
+  width: 100%;
+  height: 310px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
 }
 
-.breaker_two{
-    margin-top:1915px;
-    background-image: url('../images/hobbiton_breaker.jpg');
-    width: 100%;
-    height: 310px;
-    margin-bottom: 5px;
+h2 {
+  padding-top: 60px;
+  color: #F1F1F1;
+  font-size: 50px;
+  border-bottom: 3px solid #F1F1F1;
+  margin-left: 500px;
+  margin-right: 500px;
 }
 
+.breaker_two {
+  margin-top: 1915px;
+  background-image: url('../images/hobbiton_breaker.jpg');
+  width: 100%;
+  height: 310px;
+  margin-bottom: 5px;
+}
 
 /* breaker */
-.hotel_one{
+.hotel_one {
   position: flex;
   width: 49.8%;
   height: 950px;
@@ -124,93 +132,7 @@ p2{
   margin-bottom: 5px;
 }
 
-
-
-.hotel_one button{
-  font-size: 20px;
-  color: white;
-  background-color: #af3e4d;
-  float: right;
-  margin-left: 200px;
-  margin-top: 830px;
-  margin-right: 110px;
-  border-radius: 8px;
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: 'Nunito', sans-serif;
-  display: inline-block;
-    border: none;
-}
-
-
-
-
-.hotel_two{
-  position: flex;
-  width: 49.8%;
-  height: 950px;
-  background-image: url('../images/hotel_two.jpg');
-  float: left;
-  margin-bottom: 5px;
-}
-
-.hotel_two button{
-  font-size: 20px;
-  color: white;
-  background-color: #af3e4d;
-  float: right;
-  margin-left: 200px;
-  margin-top: 830px;
-  margin-right: 110px;
-  border-radius: 8px;
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: 'Nunito', sans-serif;
-  display: inline-block;
-    border: none;
-}
-
-
-
-
-.hotel_three{
-  position: flex;
-  width: 49.8%;
-  height: 950px;
-  background-image: url('../images/hotel_three.jpg');
-  float: left;
-  margin-right: 5px;
-}
-
-.hotel_three button{
-  font-size: 20px;
-  color: white;
-  background-color: #af3e4d;
-  float: right;
-  margin-left: 200px;
-  margin-top: 830px;
-  margin-right: 110px;
-  border-radius: 8px;
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: 'Nunito', sans-serif;
-  display: inline-block;
-    border: none;
-}
-
-
-.hotel_four{
-  position: flex;
-width: 49.8%;
-  height: 950px;
-  background-image: url('../images/hotel_four.jpg');
-  float: left;
-}
-
-.hotel_four button{
+.hotel_one button {
   font-size: 20px;
   color: white;
   background-color: #af3e4d;
@@ -225,13 +147,215 @@ width: 49.8%;
   font-family: 'Nunito', sans-serif;
   display: inline-block;
   border: none;
-  
+}
 
+.hotel_two {
+  position: flex;
+  width: 49.8%;
+  height: 950px;
+  background-image: url('../images/hotel_two.jpg');
+  float: left;
+  margin-bottom: 5px;
+}
+
+.hotel_two button {
+  font-size: 20px;
+  color: white;
+  background-color: #af3e4d;
+  float: right;
+  margin-left: 200px;
+  margin-top: 830px;
+  margin-right: 110px;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  border: none;
+}
+
+.hotel_three {
+  position: flex;
+  width: 49.8%;
+  height: 950px;
+  background-image: url('../images/hotel_three.jpg');
+  float: left;
+  margin-right: 5px;
+}
+
+.hotel_three button {
+  font-size: 20px;
+  color: white;
+  background-color: #af3e4d;
+  float: right;
+  margin-left: 200px;
+  margin-top: 830px;
+  margin-right: 110px;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  border: none;
+}
+
+.hotel_four {
+  position: flex;
+  width: 49.8%;
+  height: 950px;
+  background-image: url('../images/hotel_four.jpg');
+  float: left;
+}
+
+.hotel_four button {
+  font-size: 20px;
+  color: white;
+  background-color: #af3e4d;
+  float: right;
+  margin-left: 200px;
+  margin-top: 830px;
+  margin-right: 110px;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  border: none;
+}
+
+/* model styles */
+/* model hotel One */
+h3 {
+  margin: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 30px;
+}
+
+.modal-body {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+.modalWraper {
+  text-align: left;
+  margin-left: 30%;
+}
+
+label1 {
+  border-bottom: 1px solid #bbb;
+}
+
+#subMessage {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#step2One {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#hotelModalNightsOne {
+  border: none;
+}
+
+#hotelModalCheakADatesOne {
+  border: none;
+}
+
+#hotelModalCheakBDatesOne {
+  border: none;
+}
+
+/* model hotel two */
+#subMessage {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#step2Two {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#hotelModalNightsTwo {
+  border: none;
+}
+
+#hotelModalCheakADatesTwo {
+  border: none;
+}
+
+#hotelModalCheakBDatesTwo {
+  border: none;
+}
+
+/* model hotel three */
+#subMessage {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#step2Three {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#hotelModalNightsThree {
+  border: none;
+}
+
+#hotelModalCheakADatesThree {
+  border: none;
+}
+
+#hotelModalCheakBDatesThree {
+  border: none;
+}
+
+/* model hotel four */
+#subMessage {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#step2Four {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#hotelModalNightsFour {
+  border: none;
+}
+
+#hotelModalCheakADatesFour {
+  border: none;
+}
+
+#hotelModalCheakBDatesFour {
+  border: none;
+}
+/* food styles */
+
+.foodOne{
+  position: flex;
 }
 
 
 
+
 /* breaker */
-.footer_wraper{
+.footer_wraper {
   background-color: grey;
 }
