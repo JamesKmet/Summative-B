@@ -5,7 +5,6 @@
 }
 
 .nav_buttons {
-  position: s;
   display: flex;
   align-items: center;
   font-family: 'Nunito', sans-serif;
@@ -25,6 +24,10 @@
   font-size: 30px;
   padding-left: 60px;
   padding-right: 60px;
+}
+
+h4{
+  display: none;
 }
 
 .logo1 {
@@ -56,14 +59,15 @@ hr.solid {
 /* breaker */
 .hero_banner {
   width: auto;
-  height: 1000px;
+  height: 970px;
   background-image: url('../images/hero_banner_image.jpg');
 }
+
 
 .hero_text_wraper {
   color: white;
   font-family: 'Nunito', sans-serif;
-  padding-top: 730px;
+  padding-top: 700px;
   float: right;
   margin-right: 220px;
 }
@@ -83,13 +87,13 @@ hr.solid {
   font-size: 23px;
 }
 
-p1 {
-  font-size: 50px;
+h1 {
+  font-size: 65px;
   float: right;
 }
 
-p2 {
-  font-size: 30px;
+h3 {
+  font-size: 40px;
   float: right;
 }
 
@@ -105,7 +109,7 @@ p2 {
 }
 
 h2 {
-  padding-top: 60px;
+  padding-top: 200px;
   color: #F1F1F1;
   font-size: 50px;
   border-bottom: 3px solid #F1F1F1;
@@ -113,19 +117,11 @@ h2 {
   margin-right: 500px;
 }
 
-.breaker_two {
-  margin-top: 1915px;
-  background-image: url('../images/hobbiton_breaker.jpg');
-  width: 100%;
-  height: 310px;
-  margin-bottom: 5px;
-}
 
 /* breaker */
 .hotel_one {
-  position: flex;
   width: 49.8%;
-  height: 950px;
+height: 450px;
   background-image: url('../images/hotel_one.jpg');
   float: left;
   margin-right: 5px;
@@ -138,7 +134,7 @@ h2 {
   background-color: #af3e4d;
   float: right;
   margin-left: 200px;
-  margin-top: 830px;
+  margin-top: 385px;
   margin-right: 110px;
   border-radius: 8px;
   padding: 5px;
@@ -150,9 +146,8 @@ h2 {
 }
 
 .hotel_two {
-  position: flex;
   width: 49.8%;
-  height: 950px;
+  height: 450px;
   background-image: url('../images/hotel_two.jpg');
   float: left;
   margin-bottom: 5px;
@@ -164,7 +159,7 @@ h2 {
   background-color: #af3e4d;
   float: right;
   margin-left: 200px;
-  margin-top: 830px;
+  margin-top: 385px;
   margin-right: 110px;
   border-radius: 8px;
   padding: 5px;
@@ -176,9 +171,8 @@ h2 {
 }
 
 .hotel_three {
-  position: flex;
   width: 49.8%;
-  height: 950px;
+height: 450px;
   background-image: url('../images/hotel_three.jpg');
   float: left;
   margin-right: 5px;
@@ -190,7 +184,7 @@ h2 {
   background-color: #af3e4d;
   float: right;
   margin-left: 200px;
-  margin-top: 830px;
+  margin-top: 385px;
   margin-right: 110px;
   border-radius: 8px;
   padding: 5px;
@@ -202,9 +196,8 @@ h2 {
 }
 
 .hotel_four {
-  position: flex;
   width: 49.8%;
-  height: 950px;
+  height: 450px;
   background-image: url('../images/hotel_four.jpg');
   float: left;
 }
@@ -215,7 +208,7 @@ h2 {
   background-color: #af3e4d;
   float: right;
   margin-left: 200px;
-  margin-top: 830px;
+  margin-top: 385px;
   margin-right: 110px;
   border-radius: 8px;
   padding: 5px;
@@ -243,9 +236,8 @@ h3 {
   text-align: left;
   margin-left: 30%;
 }
-
-label1 {
-  border-bottom: 1px solid #bbb;
+.modalWraper label{
+    border-bottom: 1px solid #bbb;
 }
 
 #subMessage {
@@ -258,7 +250,22 @@ label1 {
   font-size: 20px;
   margin-left: 40px;
   margin-right: 40px;
+  display: inline;
 }
+
+.mehOne p{
+  display: inline;
+}
+.mehTwo p{
+  display: inline;
+}
+.mehThree p{
+  display: inline;
+}
+.mehFour p{
+  display: inline;
+}
+
 
 #hotelModalNightsOne {
   border: none;
@@ -350,26 +357,114 @@ label1 {
 /* food styles */
 .foodOne {
   background-image: url('../images/food_one.jpg');
-  width: 25%;
+  width: 24.3%;
   height: 483px;
+  margin: 4px;
 }
 
 .foodTwo {
   background-image: url('../images/food_two.jpg');
-  width: 25%;
+  width: 24.3%;
   height: 483px;
+  margin: 4px;
 }
 
 .foodThree {
   background-image: url('../images/food_three.jpg');
-  width: 25%;
+  width: 24.3%;
   height: 483px;
+  margin: 4px;
 }
 
 .foodFour {
   background-image: url('../images/food_four.jpg');
-  width: 25%;
+  width: 24.3%;
   height: 483px;
+  margin: 4px;
+}
+
+.foodFive {
+  background-image: url('../images/food_five.jpg');
+  width: 24.3%;
+  height: 483px;
+  margin: 4px;
+}
+
+.foodSix {
+  background-image: url('../images/food_six.jpg');
+  width: 24.3%;
+  height: 483px;
+  margin: 4px;
+}
+
+.foodSeven {
+  background-image: url('../images/food_seven.jpg');
+  width: 24.3%;
+  height: 483px;
+  margin: 4px;
+}
+
+.foodEight {
+  background-image: url('../images/food_eight.jpg');
+  width: 24.3%;
+  height: 483px;
+  margin: 4px;
+}
+
+.foodNine {
+  background-image: url('../images/food_nine.jpg');
+  width: 24.3%;
+  height: 483px;
+  margin: 4px;
+}
+
+.foodTen {
+  background-image: url('../images/food_ten.jpg');
+  width: 24.3%;
+  height: 483px;
+  margin: 4px;
+}
+
+.foodEleven {
+  background-image: url('../images/food_eleven.jpg');
+  width: 24.3%;
+  height: 483px;
+  margin: 4px;
+}
+
+.foodTwelve {
+  background-image: url('../images/food_twelve.jpg');
+  width: 24.3%;
+  height: 483px;
+  margin: 4px;
+}
+
+.foodThirteen {
+  background-image: url('../images/food_thirteen.jpg');
+  width: 24.3%;
+  height: 483px;
+  margin: 4px;
+}
+
+.foodFithteen {
+  background-image: url('../images/food_fithteen.jpg');
+  width: 24.3%;
+  height: 483px;
+  margin: 4px;
+}
+
+.foodFourteen {
+  background-image: url('../images/food_fourteen.jpg');
+  width: 24.3%;
+  height: 483px;
+  margin: 4px;
+}
+
+.foodSixteen {
+  background-image: url('../images/food_sixteen.jpg');
+  width: 24.3%;
+  height: 483px;
+  margin: 4px;
 }
 
 .foodOneText {
@@ -380,6 +475,7 @@ label1 {
   text-align: center;
   font-size: 20px;
 }
+
 .foodTwoText {
   display: none;
   margin-top: 20px;
@@ -388,6 +484,7 @@ label1 {
   text-align: center;
   font-size: 20px;
 }
+
 .foodThreeText {
   display: none;
   margin-top: 20px;
@@ -396,6 +493,7 @@ label1 {
   text-align: center;
   font-size: 20px;
 }
+
 .foodFourText {
   display: none;
   margin-top: 20px;
@@ -405,6 +503,113 @@ label1 {
   font-size: 20px;
 }
 
+.foodFiveText {
+  display: none;
+  margin-top: 20px;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.foodSixText {
+  display: none;
+  margin-top: 20px;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.foodSevenText {
+  display: none;
+  margin-top: 20px;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.foodEightText {
+  display: none;
+  margin-top: 20px;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.foodNineText {
+  display: none;
+  margin-top: 20px;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.foodTenText {
+  display: none;
+  margin-top: 20px;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.foodElevenText {
+  display: none;
+  margin-top: 20px;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.foodTwelveText {
+  display: none;
+  margin-top: 20px;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.foodThirteenText {
+  display: none;
+  margin-top: 20px;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.foodFourteenText {
+  display: none;
+  margin-top: 20px;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.foodSixteenText {
+  display: none;
+  margin-top: 20px;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.foodFithteenText {
+  display: none;
+  margin-top: 20px;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
 
 h5 {
   text-align: center;
@@ -418,9 +623,63 @@ h5 {
   margin-bottom: 30px;
 }
 
-
-
 /* breaker */
 .footer_wraper {
+  width: 100%;
+  height: 250px;
   background-color: grey;
+}
+
+.left {
+  margin: 30px;
+  margin-left: 16%;
+  margin-right: 5%;
+  text-align: center;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.right {
+  margin: 30px;
+  margin-right: 5%;
+  margin-left: 5%;
+  text-align: center;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.pog {
+  margin: 30px;
+  margin-right: 5%;
+  margin-left: 5%;
+  text-align: center;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.breaker_two {
+  margin-top: 5px;
+  background-image: url('../images/mountain_breaker.jpg');
+  width: 100%;
+  height: 310px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 916px;
+}
+
+.menu_wraper_for_hotel_one {
+  margin-left: 19px;
+}
+
+.menu_wraper_for_hotel_two {
+  margin-left: 19px;
+}
+
+.menu_wraper_for_hotel_three {
+  margin-left: 19px;
+}
+
+.menu_wraper_for_hotel_four {
+  margin-left: 19px;
 }

@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>New Zealand Tourism</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrapTest.css">
   <link rel="stylesheet" href="css/custom.min.css">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/toastr.min.css" />
+
 
 </head>
 
@@ -19,11 +21,11 @@
       <div class="nav_buttons">
         <div class="nav_item_R"><img class="logo1" src="images/logo.jpg" alt="."></div>
         <hr class="solid">
-        <div class="nav_item"><a>Hotels</a></div>
+        <div id="navOne" class="nav_item"><a>Hotels</a></div>
         <hr class="solid">
-        <div class="nav_item"><a>Menu</a></div>
+        <div id="navTwo" class="nav_item"><a>Menu</a></div>
         <hr class="solid">
-        <div class="nav_item1"><a>AboutUs</a></div>
+        <div id="navThree" class="nav_item1"><a>AboutUs</a></div>
         <hr class="solid">
         <div class="nav_item_L"><img class="logo2" src="images/logo.jpg" alt="."></div>
       </div>
@@ -31,16 +33,15 @@
   </nav>
 
 
-  <section class="hero_banner">
+  <section id="testy" class="hero_banner">
     <div class="hero_text_wraper">
-      <p1>Discover New Zealand</p1>
+      <h1>Discover New Zealand</h1>
       <br>
-      <p2>Plan your next Adventure</p2>
+      <h3>Plan your next Adventure</h3>
       <br>
       <button id="homeButton" type="button" data-toggle="modal" data-target="#FirstModal">Lets Go</button>
     </div>
   </section>
-
 
   <section>
     <div class="breaker_one">
@@ -49,8 +50,8 @@
   </section>
 
 
-  <section class="hotel_booking">
-
+  <section id="hotelBookingId" class="hotel_booking">
+    <h4>placeholder for validation</h4>
     <div id="h1" class="hotel_one">
       <button id="testModal" type="button" data-toggle="modal" data-target="#hotelModalOne">Make Booking</button>
     </div>
@@ -65,17 +66,20 @@
     </div>
   </section>
 
-  <section class="pog">
-    <div class="breaker_two">
+  <section id="breaker_twoId" class="breaker_two">
+    <h4>placeholder for validation</h4>
+    <div class="pog">
+
     </div>
   </section>
 
-  <section class="menu_wraper">
-    <div class="row">
 
+  <section id="menuOne" class="menu_wraper_for_hotel_one">
+    <a id="menuOneTest"></a>
+    <div class="row">
       <div id="foodItemIdOne" class="foodOne">
         <div id="foodItemIdTextOne" class="foodOneText">
-          <h5>Royal With Cheese</h5>
+          <h5>Srimp Pasta</h5>
           <p>Shrimp</p>
           <p>Noodles</p>
           <p>Sea grown Clams</p>
@@ -86,7 +90,7 @@
 
       <div id="foodItemIdTwo" class="foodTwo">
         <div id="foodItemIdTextTwo" class="foodTwoText">
-          <h5>Royal With Cheese</h5>
+          <h5>Sea Food Soup</h5>
           <p>Shrimp</p>
           <p>Noodles</p>
           <p>Sea grown Clams</p>
@@ -97,51 +101,211 @@
 
       <div id="foodItemIdThree" class="foodThree">
         <div id="foodItemIdTextThree" class="foodThreeText">
-          <h5>Royal With Cheese</h5>
-          <p>Shrimp</p>
-          <p>Noodles</p>
-          <p>Sea grown Clams</p>
-          <p>Yellow looking Spices</p>
-          <p>A Fork</p>
+          <h5>Chickpea Curry</h5>
+          <p>Chickpea's</p>
+          <p>Rice</p>
+          <p>Spices</p>
+          <p>Tomato</p>
+          <p>Curry Paste</p>
         </div>
       </div>
 
       <div id="foodItemIdFour" class="foodFour">
         <div id="foodItemIdTextFour" class="foodFourText">
+          <h5>Italian Pizza</h5>
+          <p>Tomatos</p>
+          <p>Basil</p>
+          <p>Tomato paste</p>
+          <p>Cheese</p>
+          <p>Olives</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menuTwo" class="menu_wraper_for_hotel_two">
+    <div class="row">
+      <div id="foodItemIdFive" class="foodFive">
+        <div id="foodItemIdTextFive" class="foodFiveText">
           <h5>Royal With Cheese</h5>
-          <p>Shrimp</p>
-          <p>Noodles</p>
-          <p>Sea grown Clams</p>
-          <p>Yellow looking Spices</p>
-          <p>A Fork</p>
+          <p>Meat patie</p>
+          <p>Bacon</p>
+          <p>Cheese</p>
+          <p>letuce</p>
+          <p>BBQ sauce</p>
+          <p>oinion</p>
         </div>
       </div>
 
+      <div id="foodItemIdSix" class="foodSix">
+        <div id="foodItemIdTextSix" class="foodSixText">
+          <h5>Leg of the Great Cuthulu</h5>
+          <p>Tomato</p>
+          <p>Basil</p>
+          <p>Spices</p>
+          <p>Baked Octopus</p>
+        </div>
+      </div>
 
+      <div id="foodItemIdSeven" class="foodSeven">
+        <div id="foodItemIdTextSeven" class="foodSevenText">
+          <h5>Breakfast for Dinner</h5>
+          <p>Poached Eggs</p>
+          <p>Fired Tomatos</p>
+          <p>Spinach</p>
+          <p>Mushrooms</p>
+          <p>Sour Dough</p>
+        </div>
+      </div>
+
+      <div id="foodItemIdEight" class="foodEight">
+        <div id="foodItemIdTextEight" class="foodEightText">
+          <h5>Chicken Salad</h5>
+          <p>Tomatos</p>
+          <p>Grilled Chicken</p>
+          <p>letuce</p>
+          <p>Mayo</p>
+          <p>Seasoning</p>
+        </div>
+      </div>
     </div>
+  </section>
 
+  <section id="menuThree" class="menu_wraper_for_hotel_three">
+    <div class="row">
+      <div id="foodItemIdNine" class="foodNine">
+        <div id="foodItemIdTextNine" class="foodNineText">
+          <h5>Corn Salad</h5>
+          <p>Corn</p>
+          <p>Shreaded Carrots</p>
+          <p>Tomatos</p>
+          <p>Spinach</p>
+          <p>Disapointment</p>
+        </div>
+      </div>
 
+      <div id="foodItemIdTen" class="foodTen">
+        <div id="foodItemIdTextTen" class="foodTenText">
+          <h5>Ketio Steak</h5>
+          <p>Steak</p>
+          <p>Diced Tomatos</p>
+          <p>Poached egg</p>
+          <p>Spices</p>
+        </div>
+      </div>
 
+      <div id="foodItemIdEleven" class="foodEleven">
+        <div id="foodItemIdTextEleven" class="foodElevenText">
+          <h5>Green Shrimp Curry</h5>
+          <p>Leak</p>
+          <p>Shrimp</p>
+          <p>Mung Beans</p>
+          <p>Green Curry mix</p>
+          <p>Seasoning</p>
+        </div>
+      </div>
+
+      <div id="foodItemIdTwelve" class="foodTwelve">
+        <div id="foodItemIdTextTwelve" class="foodTwelveText">
+          <h5>Photogenic Pancakes</h5>
+          <p>Pancakes</p>
+          <p>Mapple Sirip</p>
+          <p>Strawberrys</p>
+          <p>Blueberrys</p>
+          <p>Instagram Link</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menuFour" class="menu_wraper_for_hotel_four">
+    <div class="row">
+      <div id="foodItemIdThirteen" class="foodThirteen">
+        <div id="foodItemIdTextThirteen" class="foodThirteenText">
+          <h5>Pasta la Parmisan</h5>
+          <p>Long Pasta</p>
+          <p>Parmisan</p>
+          <p>Tomato</p>
+          <p>Mice Mix</p>
+          <p>Seasoning</p>
+        </div>
+      </div>
+
+      <div id="foodItemIdFourteen" class="foodFourteen">
+        <div id="foodItemIdTextFourteen" class="foodFourteenText">
+          <h5>Dried Tomato Pasta</h5>
+          <p>Sun Dired Tomato</p>
+          <p>Pasta</p>
+          <p>Spices</p>
+          <p>Tomato Paste</p>
+        </div>
+      </div>
+
+      <div id="foodItemIdFithteen" class="foodFithteen">
+        <div id="foodItemIdTextFithteen" class="foodFithteenText">
+          <h5>Pink Guys Fried Ramen</h5>
+          <p>Poached Egg</p>
+          <p>Top Ramen</p>
+          <p>Spring Onion</p>
+          <p>Bacon</p>
+          <p>Noodles</p>
+          <p>Spaces</p>
+        </div>
+      </div>
+
+      <div id="foodItemIdSixteen" class="foodSixteen">
+        <div id="foodItemIdTextSixteen" class="foodSixteenText">
+          <h5>Blueberry Waffles</h5>
+          <p>Waffles</p>
+          <p>Blueberry</p>
+          <p>Mapple Sirip</p>
+        </div>
+      </div>
+    </div>
   </section>
 
 
-
-
-
-
-
-
-
-
   <footer>
-    <div class="footer_wraper">
-      <div class="nav_item"><a>Hotels</a></div>
-      <div class="nav_item"><a>Menu</a></div>
-      <div class="nav_item"><a>About us</a></div>
+    <div id="idForFooter" class="footer_wraper">
+      <div class="row">
+        <div class="left">
+          <p>General enquiries <br>64 9 914 4780</p>
+          <p>Wellington reception <br> 64 4 462 8000 </p>
+          <p>Tourism operators <br>please email register@newzealand.com </p>
+        </div>
+        <div class="pog">
+          <a class="links">OTHER LINKS</a>
+          <p></p>
+          <a>Privacy Policy</a>
+          <p></p>
+          <a>Terms & Conditions</a>
+          <p></p>
+          <a>Ticket</a>
+          <p></p>
+          <a>Contact Us</a>
+        </div>
+        <div class="pog">
+          <a class="links">Our other sites</a>
+          <p></p>
+          <a>Media</a>
+          <p></p>
+          <a>The Visual Library</a>
+          <p></p>
+          <a>Travel Trade</a>
+          <p></p>
+          <a>Business Events</a>
+        </div>
+        <div class="right">
+          <p>Copyright 1999-2021 <br> Tourism New Zealand</p>
+          <p></p>
+          <img src="images/nzg_logo.png" alt=".">
+        </div>
+      </div>
     </div>
   </footer>
 
 
+  <!-- model for First action -->
   <div class="modal fade" id="FirstModal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -185,38 +349,40 @@
           <h3>Please fill out booking infomation bellow</h3>
           <form class="modalWraper" action="/action_page.php">
 
-            <label1>Number of Nights:</label1>
+            <label>Number of Nights:</label>
             <input type="text" id="hotelModalNightsOne" value="0">
             <br>
-            <label1>Cheak in date:</label1>
+            <label>Cheak in date:</label>
             <input type="text" id="hotelModalCheakADatesOne" value="23/01/1997">
             <br>
-            <label1>Cheak out date:</label1>
+            <label>Cheak out date:</label>
             <input type="text" id="hotelModalCheakBDatesOne" value="29/10/1998">
           </form>
 
           <br>
-          <div id="totalPriceDiv">
+          <div id="totalPriceDivFour">
             <button type="button" class="btn btn-success" onclick="nightValidatorOne()" id="availablityOne">Cheak Availablity</button>
             <br>
             <br>
             <p id="subMessageOne"></p>
           </div>
           <br>
-          <div class="meh" id="step2One">
+          <div class="mehOne" id="step2One">
             <p>final total is</p>
+            <p>$</p>
             <p id="outPutOne"></p>
+            <br>
+            <br>
             <button type="button" class="btn btn-success" onclick="caluclatorValidatorOne()">Caluclate Cost</button>
           </div>
         </div>
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-success" id="findHotel" onclick="testing()" data-dismiss="modal">Book Hotel</button>
+          <button id="modalEndOne" type="button" class="btn btn-success" data-dismiss="modal">Book Hotel</button>
         </div>
       </div>
     </div>
   </div>
-
 
   <!-- model for Hotel two -->
   <div class="modal fade" id="hotelModalTwo">
@@ -232,38 +398,39 @@
           <h3>Please fill out booking infomation bellow</h3>
           <form class="modalWraper" action="/action_page.php">
 
-            <label1>Number of Nights:</label1>
+            <label>Number of Nights:</label>
             <input type="text" id="hotelModalNightsTwo" value="0">
             <br>
-            <label1>Cheak in date:</label1>
+            <label>Cheak in date:</label>
             <input type="text" id="hotelModalCheakADatesTwo" value="23/01/1997">
             <br>
-            <label1>Cheak out date:</label1>
+            <label>Cheak out date:</label>
             <input type="text" id="hotelModalCheakBDatesTwo" value="29/10/1998">
           </form>
 
           <br>
-          <div id="totalPriceDiv">
+          <div id="totalPriceDivOne">
             <button type="button" class="btn btn-success" onclick="nightValidatorTwo()" id="availablityTwo">Cheak Availablity</button>
             <br>
             <br>
             <p id="subMessageTwo"></p>
           </div>
           <br>
-          <div class="meh" id="step2Two">
+          <div class="mehTwo" id="step2Two">
             <p>final total is</p>
             <p id="outPutTwo"></p>
+            <br>
+            <br>
             <button type="button" class="btn btn-success" onclick="caluclatorValidatorTwo()">Caluclate Cost</button>
           </div>
         </div>
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-success" id="findHotel" data-dismiss="modal">Book Hotel</button>
+          <button id="modalEndTwo" type="button" class="btn btn-success" data-dismiss="modal">Book Hotel</button>
         </div>
       </div>
     </div>
   </div>
-
 
   <!-- model for Hotel three -->
   <div class="modal fade" id="hotelModalThree">
@@ -279,38 +446,39 @@
           <h3>Please fill out booking infomation bellow</h3>
           <form class="modalWraper" action="/action_page.php">
 
-            <label1>Number of Nights:</label1>
+            <label>Number of Nights:</label>
             <input type="text" id="hotelModalNightsThree" value="0">
             <br>
-            <label1>Cheak in date:</label1>
+            <label>Cheak in date:</label>
             <input type="text" id="hotelModalCheakADatesThree" value="23/01/1997">
             <br>
-            <label1>Cheak out date:</label1>
+            <label>Cheak out date:</label>
             <input type="text" id="hotelModalCheakBDatesThree" value="29/10/1998">
           </form>
 
           <br>
-          <div id="totalPriceDiv">
+          <div id="totalPriceDivTwo">
             <button type="button" class="btn btn-success" onclick="nightValidatorThree()" id="availablityThree">Cheak Availablity</button>
             <br>
             <br>
             <p id="subMessageThree"></p>
           </div>
           <br>
-          <div class="meh" id="step2Three">
+          <div class="mehThree" id="step2Three">
             <p>final total is</p>
             <p id="outPutThree"></p>
+            <br>
+            <br>
             <button type="button" class="btn btn-success" onclick="caluclatorValidatorThree()">Caluclate Cost</button>
           </div>
         </div>
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-success" id="findHotel" data-dismiss="modal">Book Hotel</button>
+          <button id="modalEndThree" type="button" class="btn btn-success" data-dismiss="modal">Book Hotel</button>
         </div>
       </div>
     </div>
   </div>
-
 
   <!-- model for Hotel Four -->
   <div class="modal fade" id="hotelModalFour">
@@ -326,61 +494,45 @@
           <h3>Please fill out booking infomation bellow</h3>
           <form class="modalWraper" action="/action_page.php">
 
-            <label1>Number of Nights:</label1>
+            <label>Number of Nights:</label>
             <input type="text" id="hotelModalNightsFour" value="0">
             <br>
-            <label1>Cheak in date:</label1>
+            <label>Cheak in date:</label>
             <input type="text" id="hotelModalCheakADatesFour" value="23/01/1997">
             <br>
-            <label1>Cheak out date:</label1>
+            <label>Cheak out date:</label>
             <input type="text" id="hotelModalCheakBDatesFour" value="29/10/1998">
           </form>
 
           <br>
-          <div id="totalPriceDiv">
+          <div id="totalPriceDivThree">
             <button type="button" class="btn btn-success" onclick="nightValidatorFour()" id="availablityFour">Cheak Availablity</button>
             <br>
             <br>
             <p id="subMessageFour"></p>
           </div>
           <br>
-          <div class="meh" id="step2Four">
+          <div class="mehFour" id="step2Four">
             <p>final total is</p>
             <p id="outPutFour"></p>
+            <br>
+            <br>
             <button type="button" class="btn btn-success" onclick="caluclatorValidatorFour()">Caluclate Cost</button>
           </div>
         </div>
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-success" id="findHotel" data-dismiss="modal" data-target="test()">Book Hotel</button>
+          <button id="modalEndFour" type="button" class="btn btn-success" data-dismiss="modal">Book Hotel</button>
         </div>
       </div>
     </div>
   </div>
 
 
-
-  </div>
-
-
-  <div class="toast" id="myToast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <img src="..." class="rounded mr-2" alt="...">
-      <strong class="mr-auto">Bootstrap</strong>
-      <small>11 mins ago</small>
-      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="toast-body">
-      Hello, world! This is a toast message.
-    </div>
-  </div>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/jqueryTest.js"></script>
+  <script src="js/popperTest.js"></script>
+  <script src="js/bootstrapTest.js"></script>
+  <script src="js/toastr.min.js"></script>
   <script src="js/custom.js"></script>
 </body>
 
