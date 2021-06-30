@@ -1,11 +1,6 @@
-// (function() {
-//   'use strict';
-//
+(function() {
+  'use strict';
 
-//
-// (function() {
-//   'use strict';
-//
 
 
 var data = {
@@ -37,7 +32,7 @@ var data = {
     maxPeople: 4,
     price: 240
   }
-}
+};
 
 
 
@@ -64,6 +59,32 @@ function myFunction() {
 var getNightsInput = document.getElementById('numberOfNights');
 var getPeopleInput = document.getElementById('numberOfPeople');
 var getHotels = document.getElementById('findHotel');
+
+
+// Button click Events
+var getButtonA = document.getElementById('availablityOne');
+getButtonA.onclick = function () {
+  nightValidatorOne();
+  caluclatorValidatorOne();
+};
+
+var getButtonB = document.getElementById('availablityTwo');
+getButtonB.onclick = function () {
+  nightValidatorTwo();
+  caluclatorValidatorTwo();
+};
+
+var getButtonC = document.getElementById('availablityThree');
+getButtonC.onclick = function () {
+  nightValidatorThree();
+  caluclatorValidatorThree();
+};
+
+var getButtonD = document.getElementById('availablityFour');
+getButtonD.onclick = function () {
+  nightValidatorFour();
+  caluclatorValidatorFour();
+};
 
 
 // script for button on the home page
@@ -147,7 +168,7 @@ function nightValidatorOne() {
 
 // the second function finds the total cost of there trips
 function caluclatorValidatorOne() {
-  // var text;
+  var text;
   var getHotelModalNightsOne = document.getElementById('hotelModalNightsOne').value;
   var x = getHotelModalNightsOne;
   var y = 157;
@@ -155,8 +176,7 @@ function caluclatorValidatorOne() {
   text = z;
   document.getElementById("outPutOne").innerHTML = text;
 }
-nightValidatorOne();
-caluclatorValidatorOne();
+
 
 
 // booking caluclator for hotel two
@@ -183,8 +203,7 @@ function caluclatorValidatorTwo() {
   text = z;
   document.getElementById("outPutTwo").innerHTML = text;
 }
-nightValidatorTwo();
-caluclatorValidatorTwo();
+
 
 
 // booking caluclator for hotel Three
@@ -210,8 +229,7 @@ function caluclatorValidatorThree() {
   text = z;
   document.getElementById("outPutThree").innerHTML = text;
 }
-nightValidatorThree();
-caluclatorValidatorThree();
+
 
 // booking caluclator for hotel Four
 function nightValidatorFour() {
@@ -236,8 +254,7 @@ function caluclatorValidatorFour() {
   text = z;
   document.getElementById("outPutFour").innerHTML = text;
 }
-nightValidatorFour();
-caluclatorValidatorFour();
+
 
 //script for determining which menu the user is alloud to interact with
 var getButtonOne = document.getElementById('h1');
@@ -249,22 +266,22 @@ getButtonOne.onclick = function() {
   document.getElementById("menuTwo").style.opacity = '0.2';
   document.getElementById("menuThree").style.opacity = '0.2';
   document.getElementById("menuFour").style.opacity = '0.2';
-}
+};
 getButtonTwo.onclick = function() {
   document.getElementById("menuOne").style.opacity = '0.2';
   document.getElementById("menuThree").style.opacity = '0.2';
   document.getElementById("menuFour").style.opacity = '0.2';
-}
+};
 getButtonThree.onclick = function() {
   document.getElementById("menuTwo").style.opacity = '0.2';
   document.getElementById("menuOne").style.opacity = '0.2';
   document.getElementById("menuFour").style.opacity = '0.2';
-}
+};
 getButtonFour.onclick = function() {
   document.getElementById("menuTwo").style.opacity = '0.2';
   document.getElementById("menuThree").style.opacity = '0.2';
   document.getElementById("menuOne").style.opacity = '0.2';
-}
+};
 
 
 
@@ -287,7 +304,7 @@ getMenuBar.onclick = function() {
       behavior: 'smooth'
     });
   }, 500);
-}
+};
 
 getHotelBar.onclick = function() {
   setTimeout(function() {
@@ -295,7 +312,7 @@ getHotelBar.onclick = function() {
       behavior: 'smooth'
     });
   }, 500);
-}
+};
 
 getAboutUsBar.onclick = function() {
   setTimeout(function() {
@@ -303,7 +320,7 @@ getAboutUsBar.onclick = function() {
       behavior: 'smooth'
     });
   }, 500);
-}
+};
 
 
 
@@ -316,28 +333,28 @@ getEndModalOne.onclick = function() {
       behavior: 'smooth'
     });
   }, 1000);
-}
+};
 getEndModalTwo.onclick = function() {
   setTimeout(function() {
     document.getElementById("menuTwo").scrollIntoView({
       behavior: 'smooth'
     });
   }, 1000);
-}
+};
 getEndModalFour.onclick = function() {
   setTimeout(function() {
     document.getElementById("menuFour").scrollIntoView({
       behavior: 'smooth'
     });
   }, 1000);
-}
+};
 getEndModalThree.onclick = function() {
   setTimeout(function() {
     document.getElementById("menuThree").scrollIntoView({
       behavior: 'smooth'
     });
   }, 1000);
-}
+};
 
 
 
@@ -359,7 +376,7 @@ getFoodIdOne.onclick = function() {
     document.getElementById("foodItemIdOne").style.backgroundImage = "url('images/food_one.jpg')";
     document.getElementById("foodItemIdTextOne").style.display = "none";
   }, 5000);
-}
+};
 
 var getFoodIdTwo = document.getElementById('foodItemIdTwo');
 getFoodIdTwo.onclick = function() {
@@ -369,7 +386,7 @@ getFoodIdTwo.onclick = function() {
     document.getElementById("foodItemIdTwo").style.backgroundImage = "url('images/food_two.jpg')";
     document.getElementById("foodItemIdTextTwo").style.display = "none";
   }, 5000);
-}
+};
 
 var getFoodIdThree = document.getElementById('foodItemIdThree');
 getFoodIdThree.onclick = function() {
@@ -379,7 +396,7 @@ getFoodIdThree.onclick = function() {
     document.getElementById("foodItemIdThree").style.backgroundImage = "url('images/food_three.jpg')";
     document.getElementById("foodItemIdTextThree").style.display = "none";
   }, 10000);
-}
+};
 
 var getFoodIdFour = document.getElementById('foodItemIdFour');
 getFoodIdFour.onclick = function() {
@@ -389,132 +406,132 @@ getFoodIdFour.onclick = function() {
     document.getElementById("foodItemIdFour").style.backgroundImage = "url('images/food_four.jpg')";
     document.getElementById("foodItemIdTextFour").style.display = "none";
   }, 10000);
-}
+};
 
 //second row
 
-var getFoodIdOne = document.getElementById('foodItemIdFive');
-getFoodIdOne.onclick = function() {
+var getFoodIdFive = document.getElementById('foodItemIdFive');
+getFoodIdFive.onclick = function() {
   document.getElementById("foodItemIdTextFive").style.display = "contents";
   document.getElementById("foodItemIdFive").style.backgroundImage = "none";
   setTimeout(function() {
     document.getElementById("foodItemIdFive").style.backgroundImage = "url('images/food_five.jpg')";
     document.getElementById("foodItemIdTextFive").style.display = "none";
   }, 10000);
-}
+};
 
-var getFoodIdTwo = document.getElementById('foodItemIdSix');
-getFoodIdTwo.onclick = function() {
+var getFoodIdSix = document.getElementById('foodItemIdSix');
+getFoodIdSix.onclick = function() {
   document.getElementById("foodItemIdTextSix").style.display = "contents";
   document.getElementById("foodItemIdSix").style.backgroundImage = "none";
   setTimeout(function() {
     document.getElementById("foodItemIdSix").style.backgroundImage = "url('images/food_six.jpg')";
     document.getElementById("foodItemIdTextSix").style.display = "none";
   }, 10000);
-}
+};
 
-var getFoodIdThree = document.getElementById('foodItemIdSeven');
-getFoodIdThree.onclick = function() {
+var getFoodIdSeven = document.getElementById('foodItemIdSeven');
+getFoodIdSeven.onclick = function() {
   document.getElementById("foodItemIdTextSeven").style.display = "contents";
   document.getElementById("foodItemIdSeven").style.backgroundImage = "none";
   setTimeout(function() {
     document.getElementById("foodItemIdSeven").style.backgroundImage = "url('images/food_seven.jpg')";
     document.getElementById("foodItemIdTextSeven").style.display = "none";
   }, 10000);
-}
+};
 
-var getFoodIdFour = document.getElementById('foodItemIdEight');
-getFoodIdFour.onclick = function() {
+var getFoodIdEight = document.getElementById('foodItemIdEight');
+getFoodIdEight.onclick = function() {
   document.getElementById("foodItemIdTextEight").style.display = "contents";
   document.getElementById("foodItemIdEight").style.backgroundImage = "none";
   setTimeout(function() {
     document.getElementById("foodItemIdEight").style.backgroundImage = "url('images/food_eight.jpg')";
     document.getElementById("foodItemIdTextEight").style.display = "none";
   }, 10000);
-}
+};
 
 //third row
 
-var getFoodIdOne = document.getElementById('foodItemIdNine');
-getFoodIdOne.onclick = function() {
+var getFoodIdNine = document.getElementById('foodItemIdNine');
+getFoodIdNine.onclick = function() {
   document.getElementById("foodItemIdTextNine").style.display = "contents";
   document.getElementById("foodItemIdNine").style.backgroundImage = "none";
   setTimeout(function() {
     document.getElementById("foodItemIdNine").style.backgroundImage = "url('images/food_nine.jpg')";
     document.getElementById("foodItemIdTextNine").style.display = "none";
   }, 10000);
-}
+};
 
-var getFoodIdTwo = document.getElementById('foodItemIdTen');
-getFoodIdTwo.onclick = function() {
+var getFoodIdTen = document.getElementById('foodItemIdTen');
+getFoodIdTen.onclick = function() {
   document.getElementById("foodItemIdTextTen").style.display = "contents";
   document.getElementById("foodItemIdTen").style.backgroundImage = "none";
   setTimeout(function() {
     document.getElementById("foodItemIdTen").style.backgroundImage = "url('images/food_ten.jpg')";
     document.getElementById("foodItemIdTextTen").style.display = "none";
   }, 10000);
-}
+};
 
-var getFoodIdThree = document.getElementById('foodItemIdEleven');
-getFoodIdThree.onclick = function() {
+var getFoodIdEleven = document.getElementById('foodItemIdEleven');
+getFoodIdEleven.onclick = function() {
   document.getElementById("foodItemIdTextEleven").style.display = "contents";
   document.getElementById("foodItemIdEleven").style.backgroundImage = "none";
   setTimeout(function() {
     document.getElementById("foodItemIdEleven").style.backgroundImage = "url('images/food_eleven.jpg')";
     document.getElementById("foodItemIdTextEleven").style.display = "none";
   }, 10000);
-}
+};
 
-var getFoodIdFour = document.getElementById('foodItemIdTwelve');
-getFoodIdFour.onclick = function() {
+var getFoodIdTwelve = document.getElementById('foodItemIdTwelve');
+getFoodIdTwelve.onclick = function() {
   document.getElementById("foodItemIdTextTwelve").style.display = "contents";
   document.getElementById("foodItemIdTwelve").style.backgroundImage = "none";
   setTimeout(function() {
     document.getElementById("foodItemIdTwelve").style.backgroundImage = "url('images/food_twelve.jpg')";
     document.getElementById("foodItemIdTextTwelve").style.display = "none";
   }, 10000);
-}
+};
 
 //fourth row
-var getFoodIdOne = document.getElementById('foodItemIdThirteen');
-getFoodIdOne.onclick = function() {
+var getFoodIdThriteen = document.getElementById('foodItemIdThirteen');
+getFoodIdThriteen.onclick = function() {
   document.getElementById("foodItemIdTextThirteen").style.display = "contents";
   document.getElementById("foodItemIdThirteen").style.backgroundImage = "none";
   setTimeout(function() {
     document.getElementById("foodItemIdThirteen").style.backgroundImage = "url('images/food_thirteen.jpg')";
     document.getElementById("foodItemIdTextThirteen").style.display = "none";
   }, 10000);
-}
+};
 
-var getFoodIdTwo = document.getElementById('foodItemIdFourteen');
-getFoodIdTwo.onclick = function() {
+var getFoodIdFourteen = document.getElementById('foodItemIdFourteen');
+getFoodIdFourteen.onclick = function() {
   document.getElementById("foodItemIdTextFourteen").style.display = "contents";
   document.getElementById("foodItemIdFourteen").style.backgroundImage = "none";
   setTimeout(function() {
     document.getElementById("foodItemIdFourteen").style.backgroundImage = "url('images/food_fourteen.jpg')";
     document.getElementById("foodItemIdTextFourteen").style.display = "none";
   }, 10000);
-}
+};
 
-var getFoodIdThree = document.getElementById('foodItemIdFithteen');
-getFoodIdThree.onclick = function() {
+var getFoodIdFithteen = document.getElementById('foodItemIdFithteen');
+getFoodIdFithteen.onclick = function() {
   document.getElementById("foodItemIdTextFithteen").style.display = "contents";
   document.getElementById("foodItemIdFithteen").style.backgroundImage = "none";
   setTimeout(function() {
     document.getElementById("foodItemIdFithteen").style.backgroundImage = "url('images/food_fithteen.jpg')";
     document.getElementById("foodItemIdTextFithteen").style.display = "none";
   }, 10000);
-}
+};
 
-var getFoodIdFour = document.getElementById('foodItemIdSixteen');
-getFoodIdFour.onclick = function() {
+var getFoodIdSixteen = document.getElementById('foodItemIdSixteen');
+getFoodIdSixteen.onclick = function() {
   document.getElementById("foodItemIdTextSixteen").style.display = "contents";
   document.getElementById("foodItemIdSixteen").style.backgroundImage = "none";
   setTimeout(function() {
     document.getElementById("foodItemIdSixteen").style.backgroundImage = "url('images/food_sixteen.jpg')";
     document.getElementById("foodItemIdTextSixteen").style.display = "none";
   }, 10000);
-}
+};
 
 
 //toaster section
@@ -537,9 +554,9 @@ $('#findHotel').on('click', function() {
     "hideEasing": "linear",
     "showMethod": "fadeIn",
     "hideMethod": "fadeOut"
-  }
+  };
 
-  toastr["success"]("Please select one of the available Hotels")
+  toastr.success("Please select one of the available Hotels");
 });
 
 //toasters for thank you for booking and showing menu
@@ -560,9 +577,9 @@ $('#modalEndOne').on('click', function() {
     "hideEasing": "linear",
     "showMethod": "fadeIn",
     "hideMethod": "fadeOut"
-  }
+  };
 
-  toastr["success"]("Thank you for Booking. View the following compelemtry food options bellow")
+  toastr.success("Thank you for Booking. View the following compelemtry food options bellow");
 });
 
 $('#modalEndTwo').on('click', function() {
@@ -582,9 +599,9 @@ $('#modalEndTwo').on('click', function() {
     "hideEasing": "linear",
     "showMethod": "fadeIn",
     "hideMethod": "fadeOut"
-  }
+  };
 
-  toastr["success"]("View the following compelemtry food options bellow")
+  toastr.success("View the following compelemtry food options bellow");
 });
 
 $('#modalEndThree').on('click', function() {
@@ -604,9 +621,9 @@ $('#modalEndThree').on('click', function() {
     "hideEasing": "linear",
     "showMethod": "fadeIn",
     "hideMethod": "fadeOut"
-  }
+  };
 
-  toastr["success"]("View the following compelemtry food options bellow")
+  toastr.success("View the following compelemtry food options bellow");
 });
 
 $('#modalEndFour').on('click', function() {
@@ -626,15 +643,12 @@ $('#modalEndFour').on('click', function() {
     "hideEasing": "linear",
     "showMethod": "fadeIn",
     "hideMethod": "fadeOut"
-  }
+  };
 
-  toastr["success"]("View the following compelemtry food options bellow")
+  toastr.success("View the following compelemtry food options bellow");
 });
 
 
-//
-// }());
 
-
-// }());
+}());
 // Custom iife ENDS
